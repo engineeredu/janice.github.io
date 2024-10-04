@@ -1,0 +1,202 @@
+:root {
+    --color-background: #540B0E;
+    --color-background1: #370617;
+    --color-background2: #6A040F;
+    --color-background3: #3C1642;
+    --color-background4: #708D81;
+    --color-background5: #001427;
+    --color-background6: #8D0801;
+    --color-background7: #7209B7;
+    --color-background8: #161a1d;
+    --color-background9: #240046;
+    --color-backgrounda: #38040e;
+    --color-backgroundb: #2D00F7;
+    --color-backgroundc: #FFEE32;
+    --color-backgroundd: #C86BFA;
+    --color-backgrounde: #4a006f;
+    --color-backgroundf: #691e06;
+    --color-backgroundg: #613f75;
+    --color-backgroundh: #fff;
+    --color-backgroundi: #fed0bb;
+    --color-backgroundj: #ffa5ab;
+    --color-backgroundk: #e4b1ab;
+    --color-backgroundl: #fff9ec;
+    --color-backgroundm: #fff0f3;
+    --color-backgroundn: #FF97B7;
+    --color-backgroundo: #ffe5ec;
+    --color-backgroundp: #613f75;
+    --color-backgroundq: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+}
+body {
+    background-color: var(--color-background1);
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+#logo > img {
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0 0 10px 0
+}
+/* Flexbox container for the navigation */
+#logo .logo-1 > #logo-2 {
+    display: flex;
+    justify-content: space-evenly; /* Evenly space out the items */
+    align-items: center; /* Align items vertically in the center */
+    background-color: var(--color-backgroundj); /* Set background color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it stretches across the entire viewport */
+    list-style: none; /* Remove bullet points */
+    padding: 10px 0; /* Add some padding for spacing */
+    margin: 0; /* Remove any margins */
+    z-index: 1000; /* Keep it on top of other elements */
+}
+
+/* Styling for individual list items */
+#logo .logo-1 > #logo-2 li {
+    padding: 0 20px; /* Add horizontal spacing between items */
+}
+
+/* Links in the navigation */
+#logo .logo-1 > #logo-2 li a {
+    text-decoration: none;
+    color: #fff; /* Adjust text color */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold;
+}
+/* Video container to hold the video and text */
+.video-background {
+    position: relative; /* Acts as a container for absolutely positioned elements */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100vw; /* Make the video cover the entire width of the viewport */
+    height: auto;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute; /* Overlay the text on top of the video */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    color: white; /* Set text color for contrast */
+    text-align: center; /* Center the text */
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold;
+    z-index: 10; /* Make sure text is above the video */
+}
+
+.overlay-text h1 {
+    margin: 0; /* Remove extra margin from h1 */
+    padding: 0;
+}
+
+/* Optional: Add a semi-transparent background for better text readability */
+.overlay-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Styling the container for the explanation */
+.explanation {
+    width: 100vw; /* Full viewport width */
+    padding: 20px; /* Add some padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the text within the container */
+    background-color: var(--color-background1); /* Light background for contrast */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    overflow: hidden;
+}
+
+/* Styling the paragraph text */
+.explanation .expl {
+    font-size: 22px; /* Slightly reduce the font size for easier reading */
+    color: var(--color-background8);
+    margin: 15px 0 0 0; /* Space between paragraphs */
+    padding: 15px; /* Padding around the text for breathing room */
+    line-height: 1.6; /* Increase line spacing for better readability */
+    text-align: justify; /* Justify the text for a cleaner layout */
+    background-color: white; /* White background to make the text stand out */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for each paragraph */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: visible;
+    padding-right: 15px;
+}
+
+/* Add hover effect for interactivity */
+.explanation p:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Optional: Add spacing between paragraphs */
+.explanation p + p {
+    margin-top: 20px; /* Space between consecutive paragraphs */
+}
+.explanation footer > p {
+    font-size: 22px; /* Slightly reduce the font size for easier reading */
+    color: var(--color-background8);
+    margin: 15px 0; /* Space between paragraphs */
+    padding: 15px; /* Padding around the text for breathing room */
+    line-height: 1.6; /* Increase line spacing for better readability */
+    text-align: justify; /* Justify the text for a cleaner layout */
+    background-color: white; /* White background to make the text stand out */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for each paragraph */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+.services-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 15px; /* Padding for the list */
+    margin: 0; /* Remove default margin */
+    background-color: #6A0BAA; /* Purple background color */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    color: white; /* Text color */
+    font-size: 20px; /* Font size for the list items */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.services-list li {
+    padding: 10px 0; /* Vertical padding for each list item */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.services-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+.footer {
+    overflow-y: hidden;
+}
+.btn-contact-details {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    overflow-y: hidden;
+    white-space: nowwrap;
+    display:inline-block;
+    
+}

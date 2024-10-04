@@ -1,0 +1,109 @@
+/* For tablets and medium-sized screens */
+@media (max-width: 1024px) {
+    #logo > img {
+        width: 100vw; /* Full width for tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For smartphones */
+@media (max-width: 768px) {
+    #logo > img {
+        width: 100vw; /* Full width for smartphones */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For very small smartphones (narrow screens) */
+@media (max-width: 480px) {
+    #logo > img {
+        width: 100vw; /* Full width for small smartphones */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+/* Styles for mobile phones (up to 480px) */
+@media only screen and (max-width: 480px) {
+    #logo img {
+        width: 100%; /* Make the logo responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .video-background {
+        height: 50vw; /* Adjust video height for mobile */
+    }
+
+    .overlay-text h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+        padding: 10px; /* Add padding */
+    }
+
+    .explanation .expl {
+        font-size: 18px; /* Smaller font size for easier reading */
+        padding: 10px; /* Less padding */
+    }
+
+    .services-list {
+        padding-left: 20px; /* Indent the list */
+    }
+
+    nav .logo-1 ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center align the items */
+    }
+
+    nav .logo-1 li {
+        margin: 5px 0; /* Space out list items */
+    }
+}
+
+/* Styles for tablets (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #logo img {
+        width: 80%; /* Slightly smaller logo for tablets */
+    }
+
+    .video-background {
+        height: 60vw; /* Adjust video height for tablets */
+    }
+
+    .overlay-text h1 {
+        font-size: 28px; /* Medium font size for tablets */
+    }
+
+    .explanation .expl {
+        font-size: 20px; /* Medium font size for easier reading */
+    }
+
+    nav .logo-1 ul {
+        flex-direction: row; /* Use horizontal layout for tablets */
+        justify-content: space-between; /* Space out items */
+    }
+
+    nav .logo-1 li {
+        margin: 0 10px; /* Space out list items */
+    }
+}
+
+/* Styles for laptops (769px and above) */
+@media only screen and (min-width: 769px) {
+    
+    .video-background {
+        height: auto; /* Default height for videos on laptops */
+    }
+
+    .overlay-text h1 {
+        font-size: 32px; /* Larger font size for laptops */
+    }
+
+    .explanation .expl {
+        font-size: 22px; /* Larger font size for easier reading */
+    }
+
+    nav .logo-1 ul {
+        justify-content: flex-start; /* Align items to the left */
+    }
+
+    nav .logo-1 li {
+        margin: 0 15px; /* More space for list items */
+    }
+}
