@@ -82,7 +82,7 @@
           <mxGeometry x="1010" y="-80" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fpLjmtLVnQg6_11v8AQf-28" value="RETURN&amp;nbsp;&lt;span style=&quot;color: rgb(42, 42, 64); font-family: Hack-ZeroSlash, monospace; font-size: 16.2px; text-align: left; white-space-collapse: break-spaces; background-color: rgb(223, 223, 226);&quot;&gt;&quot;Please enter a number greater than or equal to 1&quot;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1260" y="-315" width="240" height="130" as="geometry" />
+          <mxGeometry x="1250" y="-315" width="240" height="130" as="geometry" />
         </mxCell>
         <mxCell id="fpLjmtLVnQg6_11v8AQf-29" value="YES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="160" y="-110" width="50" height="30" as="geometry" />
